@@ -45,6 +45,9 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 1rem;
 }
+.bitcoin {
+  color: #a59678;
+}
 
 .header__btn {
   display: flex;
@@ -80,8 +83,13 @@ body {
   color: #a59678;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .main__img {
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1041896086%2F960x0.jpg%3Ffit%3Dscale&f=1&nofb=1")
+    center;
+  background-size: cover;
+  height: 200px;
   width: 100%;
   margin: 1rem 0;
 }
@@ -135,6 +143,7 @@ body {
     align-items: center;
   }
   .nav__logo {
+    font-size: 2rem;
     margin: 0;
   }
   .nav__btns {
@@ -142,6 +151,9 @@ body {
     display: flex;
     list-style: none;
     justify-content: space-around;
+  }
+  .nav__btn {
+    font-size: 1rem;
   }
 
   .header__items {
@@ -157,5 +169,50 @@ body {
   }
   .header__btn {
     margin: 1rem 0;
+  }
+
+  .section__items {
+    display: flex;
+    padding: 2rem 0;
+  }
+  .section__title {
+    font-size: 1.3rem;
+  }
+
+  .main__title {
+    text-align: inherit;
+    padding: 1rem 0;
+  }
+  .main__description {
+    padding: 1rem 0;
+  }
+  .main__img {
+    height: 200px;
+  }
+
+  .main__aside {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__aside-text {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header__text {
+    max-width: 400px;
+  }
+  .main__flex {
+    display: flex;
+  }
+  .main__body {
+    padding-right: 4rem;
+  }
+  .main__img {
+    height: 300px;
+  }
+  .main__aside {
+    display: block;
   }
 }
